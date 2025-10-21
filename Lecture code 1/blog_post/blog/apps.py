@@ -8,4 +8,4 @@ class BlogConfig(AppConfig):
 
     def ready(self):
         from blog.management.commands.delete_blog_post_periodic_task import create_periodic_task
-        create_periodic_task()
+        #create_periodic_task()
